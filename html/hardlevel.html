@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUMBER-GUESSING-GAME</title>
+    <link rel="icon" sizes="16x16 32x32" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/xlevel.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center;"> 1 və 100 arasında bir ədəd <br> daxil edin:</h2>
+    <br>
+    <div class="game-wrapper">
+      <div class="game-data">
+        <h5 class="feedback-label"></h5>
+        <div class="score-data">
+          <h5 class="score-label">Xal:<span class="score"> 0</span></h5>
+          <h5 class="score-label">Yüksək Xal:<span class="high-score"> 0</span></h5>
+        </div>
+        <div class="lives-data">
+          <ion-icon class="heart" name="heart"></ion-icon>
+          <span class="lives-count"> 5</span>
+        </div>
+        <div class="hidden-number-wrapper">
+          <div class="hidden-number-wrapper-inner">
+            <h5 class="hidden-number-label">?</h5>
+          </div>
+        </div>
+      </div>
+      <div class="game-controls">
+        <input type="text" class="guess" placeholder="Təxmin etdiyiniz ədədi yazın">
+        <button class="btn btn-blue play">Oyna</button>
+        <button class="btn btn-orange continue" disabled>Davam Et</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <h5 class="game-over">OYUN BITDI!</h5>
+      <p>Davam etmək istəyirsinizmi?</p>
+      <button class="btn btn-blue retry">YENIDƏN BAŞLAT!</button>
+      <a class="exit" href="../html/index.html">Oyunu tərk et</a>
+    </div>
+   
+
+
+    <script  type="module"  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/app.js" async defer></script>
+  </body>
+</html>
